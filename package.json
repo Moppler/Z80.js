@@ -1,0 +1,20 @@
+{
+  "name": "z80js",
+  "version": "1.0.0",
+  "description": "Z80.js ====== This is an emulator for the Z80 processor, written in JavaScript. It is developed to serve as a component of an emulator for a larger system which incorporates a Z80 as its CPU.",
+  "main": "Z80.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moppler/Z80.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moppler/Z80.js/issues"
+  },
+  "homepage": "https://github.com/Moppler/Z80.js#readme"
+}
