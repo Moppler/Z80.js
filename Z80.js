@@ -36,12 +36,9 @@ function Z80(coreParameter)
    // io_read(port) should read a return a byte read from the given I/O port,
    // io_write(port, value) should write the given byte to the given I/O port.
    // If any of those functions is missing, this module cannot run.
-   if (!core || (typeof core.mem_read !== "function") || (typeof core.mem_write !== "function") ||
-                (typeof core.io_read !== "function")  || (typeof core.io_write !== "function"))
+   if (!coreParameter || (typeof coreParameter.mem_read !== "function") || (typeof coreParameter.mem_write !== "function") ||
+      (typeof coreParameter.io_read !== "function")  || (typeof coreParameter.io_write !== "function"))
       throw("Z80: Core object is missing required functions.");
-   
-   if (this === window)
-      throw("Z80: This function is a constructor; call it using operator new.");
 
       // Obviously we'll be needing the core object's functions again.
    let core = coreParameter;
@@ -3382,3 +3379,5 @@ let cycle_counts_dd = [
       interrupt
    };
 }
+
+module.exports = Z80;
